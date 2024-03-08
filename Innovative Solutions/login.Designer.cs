@@ -1,6 +1,6 @@
 ﻿namespace Innovative_Solutions
 {
-    partial class Form1
+    partial class login
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(login));
             combobox_modeselection = new ComboBox();
             picture_ISlogo = new PictureBox();
             label_title = new Label();
@@ -61,7 +62,8 @@
             picture_ISlogo.Image = Properties.Resources.logo_small;
             picture_ISlogo.Location = new Point(12, 12);
             picture_ISlogo.Name = "picture_ISlogo";
-            picture_ISlogo.Size = new Size(359, 463);
+            picture_ISlogo.Size = new Size(353, 457);
+            picture_ISlogo.SizeMode = PictureBoxSizeMode.AutoSize;
             picture_ISlogo.TabIndex = 1;
             picture_ISlogo.TabStop = false;
             // 
@@ -173,7 +175,7 @@
             label_errormessage.Size = new Size(0, 25);
             label_errormessage.TabIndex = 11;
             // 
-            // Form1
+            // login
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -190,8 +192,11 @@
             Controls.Add(label_title);
             Controls.Add(picture_ISlogo);
             Controls.Add(combobox_modeselection);
-            Name = "Form1";
-            Text = "Form1";
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
+            Name = "login";
+            Text = "Innovative Solutions";
             ((System.ComponentModel.ISupportInitialize)picture_ISlogo).EndInit();
             ResumeLayout(false);
             PerformLayout();
